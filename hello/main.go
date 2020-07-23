@@ -23,7 +23,8 @@ func Handler(ctx context.Context, data interface{}) (Response, error) {
 	var buf bytes.Buffer
 
 	body, err := json.Marshal(map[string]interface{}{
-		"message": "Go Serverless v1.0! Your function executed successfully!",
+		"message": "Go Serverless v1.0! Your function executed successfully!!!!",
+		"data": data,
 	})
 	if err != nil {
 		return Response{StatusCode: 404}, err
